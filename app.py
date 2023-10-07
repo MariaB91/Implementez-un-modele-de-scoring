@@ -12,13 +12,13 @@ import pickle
 # Load the data
 #--------------
 # processed data for applying the scoring model
-data_processed = pd.read_csv("web/X_sample.csv", index_col='SK_ID_CURR', encoding ='utf-8')
+data_processed = pd.read_csv("X_sample.csv", index_col='SK_ID_CURR', encoding ='utf-8')
 # original data for displaying personal data
-data_original = pd.read_csv("web/data_original.csv", index_col='SK_ID_CURR')
+data_original = pd.read_csv("merged_data.csv", index_col='SK_ID_CURR')
 # label encoded original data for interpretation with surrogate model
-data_original_le = pd.read_csv("web/data_original_le.csv", index_col='SK_ID_CURR')
+data_original_le = pd.read_csv("X_sample.csv", index_col='SK_ID_CURR')
 # aggregated data of the train set for comparison to current applicant
-features_desc = pd.read_csv("web/features_descriptions.csv", index_col=0, encoding= 'unicode_escape')
+features_desc = pd.read_csv("features_descriptions.csv", index_col=0, encoding= 'unicode_escape')
 
 data_processed.drop('TARGET', axis = 1, inplace = True)
 
