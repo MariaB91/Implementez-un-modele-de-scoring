@@ -6,7 +6,6 @@ from flask import Flask, jsonify, request
 import json
 import numpy as np
 import lightgbm
-import pickle
 
 
 # Load the data
