@@ -18,12 +18,12 @@ def main() :
     @st.cache_data
     def load_data():
        
-        data = pd.read_csv('web/merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
+        data = pd.read_csv('merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
 
         
-        sample = pd.read_csv('web/X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
+        sample = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
         
-        description = pd.read_csv("web/features_descriptions.csv", 
+        description = pd.read_csv("features_descriptions.csv", 
                                   usecols=['Row', 'Description'], index_col=0, encoding= 'unicode_escape')
 
         target = data.iloc[:, -1:]
