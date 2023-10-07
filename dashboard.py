@@ -32,7 +32,7 @@ def main() :
     
     #modele
     def load_model():
-        clf = joblib.load('LGBMClassifier.joblib')
+        clf = joblib.load('lgbmclassifier.joblib')
         return clf
 
 
