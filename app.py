@@ -27,7 +27,7 @@ app = Flask(__name__)
 
 def load_model():   
     '''loading the trained model'''
-    pickle_in = open("web/lgbmclassifier.joblib", 'rb') 
+    pickle_in = open("lgbmclassifier.joblib", 'rb') 
     model = joblib.load(pickle_in)
     return model
 
