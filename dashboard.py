@@ -9,16 +9,15 @@ import sklearn
 from lightgbm import LGBMClassifier
 from sklearn.metrics import accuracy_score
 from joblib import load
-import wget
+
 
 
 def main() :
 
     @st.cache_data
     def load_data():
-   #### IMPORTATION DES DONNÉES #####
-        wget.download( "https://www.kaggle.com/datasets/mariabouchehboun/merged-data-csv",)  
-        data = pd.read_csv('merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
+   
+        data = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
 
         
         sample = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
