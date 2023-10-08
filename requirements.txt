@@ -1,3 +1,4 @@
+ipython
 streamlit 
 lightgbm
 pickle
@@ -9,3 +10,4 @@ seaborn
 shap
 matplotlib
 pyplot
+wget
