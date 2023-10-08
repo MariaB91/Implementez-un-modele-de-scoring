@@ -8,5 +8,4 @@ numpy
 seaborn
 shap
 matplotlib
-pyplot
 wget
