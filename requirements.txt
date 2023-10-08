@@ -1,7 +1,7 @@
 ipython
 streamlit 
 lightgbm
-pickle
+joblib
 scikit-learn
 pandas
 numpy
