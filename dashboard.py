@@ -17,7 +17,10 @@ def main() :
 
     @st.cache_data
     def load_data():
-   
+   #### IMPORTATION DES DONNÉES #####
+# wget.download(
+#     "kaggle datasets download -d mariabouchehboun/merged-data-csv)
+
         data = pd.read_csv('merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
 
         
