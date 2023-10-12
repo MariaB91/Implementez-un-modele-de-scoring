@@ -119,10 +119,11 @@ def main() :
     st.write("Customer ID selection :", chk_id)
 
 
-    #Customer information display : Customer  Age, Family status, Children, …
+    #Customer information display : Customer Gender, Age, Family status, Children, …
     st.header(" **Detailed Customer information**  ")
 
     infos_client = identite_client(data, chk_id)
+    st.write(" **Gender :** ", infos_client["CODE_GENDER"].values[0])
     st.write(" **Age :** {:.0f} **ans** ".format(int(infos_client["DAYS_BIRTH"]/365))) # type: ignore
     st.write(" **Family status :** ", infos_client["NAME_FAMILY_STATUS"].values[0])
     st.write(" **Number of children :** {:.0f} ".format(infos_client["CNT_CHILDREN"].values[0]))
