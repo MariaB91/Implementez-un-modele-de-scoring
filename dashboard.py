@@ -9,6 +9,7 @@ import sklearn
 from lightgbm import LGBMClassifier
 from sklearn.metrics import accuracy_score
 from joblib import load
+from zipfile import Zipfile
 
 
 
@@ -17,7 +18,8 @@ def main() :
     @st.cache_data
     def load_data():
    
-        data = pd.read_csv('merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
+        z = ZipFile("WEB/merged_data.zip")
+        data = pd.read_csv(z.open('merged_data.csv'), index_col='SK_ID_CURR', encoding ='utf-8')
 
         sample = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
         
