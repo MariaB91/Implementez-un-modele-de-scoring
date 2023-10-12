@@ -57,7 +57,7 @@ def main() :
 
     @st.cache_data
     def load_age_population(data):
-        data_age = round((data["DAYS_BIRTH"]/-365), 2)
+        data_age = round((data["DAYS_BIRTH"]/365), 2)
         return data_age
 
     @st.cache_data
@@ -124,7 +124,7 @@ def main() :
 
     infos_client = identite_client(data, chk_id)
     st.write(" **Gender :** ", infos_client["CODE_GENDER"].values[0])
-    st.write(" **Age :** {:.0f} **ans** ".format(int(infos_client["DAYS_BIRTH"]/365))) # type: ignore
+    st.write(" **Age :** {:.0f} **ans** ".format(int(infos_client["DAYS_BIRTH"]/-365))) # type: ignore
     st.write(" **Family status :** ", infos_client["NAME_FAMILY_STATUS"].values[0])
     st.write(" **Number of children :** {:.0f} ".format(infos_client["CNT_CHILDREN"].values[0]))
 
