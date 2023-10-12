@@ -17,7 +17,7 @@ def main() :
     @st.cache_data
     def load_data():
    
-        data = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
+        data = pd.read_csv('merged_data.csv', index_col='SK_ID_CURR', encoding ='utf-8')
 
         sample = pd.read_csv('X_sample.csv', index_col='SK_ID_CURR', encoding ='utf-8')
         
