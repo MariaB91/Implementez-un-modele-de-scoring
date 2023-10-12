@@ -124,7 +124,7 @@ def main() :
 
     infos_client = identite_client(data, chk_id)
     st.write(" **Gender :** ", infos_client["CODE_GENDER"].values[0])
-    st.write(" **Age :** {:.0f} **ans** ".format(int(infos_client["DAYS_BIRTH"]/-365))) # type: ignore
+    st.write(" **Age :** {:.0f} **ans** ".format(int(infos_client["DAYS_BIRTH"]/365))) # type: ignore
     st.write(" **Family status :** ", infos_client["NAME_FAMILY_STATUS"].values[0])
     st.write(" **Number of children :** {:.0f} ".format(infos_client["CNT_CHILDREN"].values[0]))
 
@@ -132,7 +132,7 @@ def main() :
     data_age = load_age_population(data)
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.histplot(data_age, edgecolor = 'k', color="pink")
-    ax.axvline(int(infos_client["DAYS_BIRTH"].values / 365), color="green", linestyle='--') # type: ignore
+    ax.axvline(int(infos_client["DAYS_BIRTH"].values / -365), color="green", linestyle='--') # type: ignore
     ax.set(title='Customer age', xlabel='Age(Year)', ylabel='')
     st.pyplot(fig)
     
