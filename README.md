@@ -1,6 +1,6 @@
 # place-du-marche
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://louiswillems-test-streamlit-streamlit-app-w0bhur.streamlit.app](https://place-du-marche.streamlit.app/)https://place-du-marche.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://place-du-marche.streamlit.app/])
 
 
 Au sein d'une société financière, nommée "Prêt à dépenser", qui propose des crédits à la consommation pour des personnes ayant peu ou pas du tout d'historique de prêt.
